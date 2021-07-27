@@ -1,3 +1,66 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-top: 2em;
+  margin-left: 4.5em;
+}
+
+ul {
+  padding: 0;
+}
+
+.container,
+.top-title {
+  display: flex;
+}
+
+.container {
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100vh;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+.top-title,
+.add-score {
+  flex-basis: 50%;
+}
+
+.score {
+  width: 50%;
+}
+
+.board {
+  display: block;
+  margin: 3em  3em 0 0;
+  list-style-type: none;
+  border: 2px solid grey;
+}
+
+.add-score input {
+  display: block;
+  margin: 1rem 0;
+  width: 15em;
+}
+
+.refresh {
+  margin-left: 3rem;
+}
+
+.submit,
+.refresh {
+  height: 2rem;
+  width: 5rem;
+}
+
+.board li {
+  padding: 0.5rem;
+}
+
+.board li:nth-child(even) {
+  background-color: rgb(214, 214, 214);
 }
