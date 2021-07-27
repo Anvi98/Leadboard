@@ -8,6 +8,10 @@ h1 {
   margin-left: 4.5em;
 }
 
+ul {
+  padding: 0;
+}
+
 .container,
 .top-title {
   display: flex;
