@@ -8,16 +8,25 @@
 <body>
     <h1>Leaderboard</h1>
     <div class="container">
-        <div class="score-list">
-            <h2>Recent Score</h2>
-            <button class="refresh">Refresh</button>
+        <div class="score">
+            <div class="top-title">
+                <h2 class="title">Recent Score</h2>
+                <button class="refresh" type="reset">Refresh</button>
+            </div>
+            <ul class="board">
+                <li class="user-score">Name: 30</li>
+                <li class="user-score">Name: 40</li>
+                <li class="user-score">Name: 50</li>
+                <li class="user-score">Name: 60</li>
+                <li class="user-score">Name: 70</li>
+            </ul>
         </div>
 
         <div class="add-score">
             <h2>Add your Score</h2>
             <input type="text" placeholder="Your name" class="name">
             <input type="number" placeholder="Your Score" class="score">
-            <button type="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
         </div>
     </div>
 </body>
