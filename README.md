@@ -16,8 +16,8 @@ In this activity I will set up a JavaScript project for the Leaderboard list app
 ### General Good Practice 
 
 - Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
-- Make sure that you used correct [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
-- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+- Make sure that I used correct [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
+- Make sure that I documented my work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
 
 
 ### Project requirements
