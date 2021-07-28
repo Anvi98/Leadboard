@@ -14,9 +14,9 @@ export const createGame = (name) => {
       div.innerHTML = `${response.result}`;
       container.appendChild(div);
 
-      // setTimeout(() => {
-      //   div.classList.add('message-hidden');
-      // }, 2000);
+      setTimeout(() => {
+        div.classList.add('message-hidden');
+      }, 2000);
     })
     .catch((err) => err);
 };
@@ -99,6 +99,8 @@ function sendData(e) {
       }, 2000);
     })
     .catch((err) => err);
+  username.value = "";
+  score.value = "";
 }
 
 submit.addEventListener('click', sendData);
