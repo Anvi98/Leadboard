@@ -1,46 +1,47 @@
-import LeaderBoard from "./app";
+import LeaderBoard from './app.js';
 
 const board = new LeaderBoard();
 export const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
 
 // Create game
-export const createGame = name =>{
+export const createGame = (name) => {
   board.post('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', name)
-    .then(response => console.log(response))
-    .catch(err => console.log(err));
-}
+    .then((response) => response)
+    .catch((err) => err);
+};
 
 // Get info From Leadboard API
-export const callApi = url => {
+export const callApi = (url) => {
   board.get(url)
-  .then(res => console.log(res.result))
-  .catch(err => console.log(err));
-}
+    .then((res) => res.result)
+    .catch((err) => err);
+};
 
-export const display = data => {
-  data.forEach(user => {
+export const display = (data) => {
+  data.forEach((user) => {
     const container = document.querySelector('.board');
     const li = document.createElement('li');
     li.classList.add('user-score');
-
-    if(!isNaN(user.score)) {
+    /* eslint-disable no-restricted-globals */
+    if (!isNaN(user.score)) {
       li.innerHTML = `${user.user}: ${user.score}`;
       container.appendChild(li);
     }
   });
-}
+};
 
 // Refresh
 const refreshItems = () => {
   board.get(url)
-    .then(res => {
+    .then((res) => {
       const data = res.result;
       display(data);
     })
-    .catch(err => console.log(err));
-}
+    .catch((err) => err);
+};
 
-const refresh = document.querySelector('.refresh').addEventListener('click', refreshItems);
+const refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', refreshItems);
 
 // Submit Button
 const username = document.querySelector('.name');
@@ -49,13 +50,13 @@ const submit = document.querySelector('.submit');
 
 const newData = {
   user: username,
-  score: score
+  score,
 };
 
 function sendData(e) {
   e.preventDefault();
   board.post(url, newData)
-    .then(res => {
+    .then((res) => {
       const form = document.querySelector('form');
       const message = document.createElement('div');
       message.classList.add('message-ok');
@@ -64,9 +65,9 @@ function sendData(e) {
 
       setTimeout(() => {
         message.classList.add('message-hidden');
-       }, 2000);
+      }, 2000);
     })
-    .catch(err => console.log(err));
+    .catch((err) => err);
 }
 
 submit.addEventListener('click', sendData);
