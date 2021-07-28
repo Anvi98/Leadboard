@@ -73,6 +73,10 @@ ul {
   color: rgb(92, 224, 92);
 }
 
+.message-created {
+  color: brown;
+}
+
 .message-hidden {
   display: none;
 }
