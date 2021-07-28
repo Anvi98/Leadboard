@@ -16,7 +16,6 @@ export const createGame = (name) => {
       setTimeout(() => {
         div.classList.add('message-hidden');
       }, 2000);
-
     })
     .catch((err) => err);
 };
