@@ -12,4 +12,10 @@ export default class LeaderBoard {
     const res = await response.json();
     return res;
   }
+
+  async get(url){
+    const response = await fetch(url);
+    const res = await response.json();
+    return res;
+  }
 }
