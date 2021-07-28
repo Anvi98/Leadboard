@@ -1,7 +1,8 @@
 import LeaderBoard from './app.js';
 
 const board = new LeaderBoard();
-export const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
+const gameid = 'SmX2CRxzg5yH7Ev8gg4H';
+export const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores/`;
 
 // Create game
 export const createGame = (name) => {
@@ -13,9 +14,9 @@ export const createGame = (name) => {
       div.innerHTML = `${response.result}`;
       container.appendChild(div);
 
-      setTimeout(() => {
-        div.classList.add('message-hidden');
-      }, 2000);
+      // setTimeout(() => {
+      //   div.classList.add('message-hidden');
+      // }, 2000);
     })
     .catch((err) => err);
 };
@@ -28,20 +29,37 @@ export const callApi = (url) => {
 };
 
 export const display = (data) => {
-  data.forEach((user) => {
-    const container = document.querySelector('.board');
-    const li = document.createElement('li');
-    li.classList.add('user-score');
-    /* eslint-disable no-restricted-globals */
-    if (!isNaN(user.score)) {
-      li.innerHTML = `${user.user}: ${user.score}`;
-      container.appendChild(li);
-    }
-  });
+    const sortedData = data.sort((a, b) => {
+      if (Number(a.score) > Number(b.score)) {
+        return -1;
+      }
+      if (Number(a.score) < Number(b.score)) {
+        return 1;
+      }
+      return 0;
+    });
+
+    sortedData.forEach((user) => {
+      const container = document.querySelector('.board');
+      const li = document.createElement('li');
+      li.classList.add('user-score');
+      /* eslint-disable no-restricted-globals */
+      if (!isNaN(user.score)) {
+        li.innerHTML = `${user.user}: ${user.score}`;
+        container.appendChild(li);
+      }
+    });
+
 };
 
 // Refresh
 const refreshItems = () => {
+  const items = document.querySelectorAll('li');
+  if(items.length > 0){
+    items.forEach(item => {
+      item.remove();
+    })
+  }
   board.get(url)
     .then((res) => {
       const data = res.result;
@@ -54,19 +72,22 @@ const refresh = document.querySelector('.refresh');
 refresh.addEventListener('click', refreshItems);
 
 // Submit Button
-const username = document.querySelector('.name');
-const score = document.querySelector('.score');
 const submit = document.querySelector('.submit');
 
-const newData = {
-  user: username,
-  score,
-};
 
 function sendData(e) {
+  const username = document.querySelector('.name');
+  const score = document.querySelector('.user_score');
+  const newData = {
+    user: username.value,
+    score: score.value
+  };
+
+
   e.preventDefault();
   board.post(url, newData)
     .then((res) => {
+      console.log(res);
       const form = document.querySelector('form');
       const message = document.createElement('div');
       message.classList.add('message-ok');
