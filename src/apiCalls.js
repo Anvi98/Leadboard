@@ -41,3 +41,32 @@ const refreshItems = () => {
 }
 
 const refresh = document.querySelector('.refresh').addEventListener('click', refreshItems);
+
+// Submit Button
+const username = document.querySelector('.name');
+const score = document.querySelector('.score');
+const submit = document.querySelector('.submit');
+
+const newData = {
+  user: username,
+  score: score
+};
+
+function sendData(e) {
+  e.preventDefault();
+  board.post(url, newData)
+    .then(res => {
+      const form = document.querySelector('form');
+      const message = document.createElement('div');
+      message.classList.add('message-ok');
+      message.innerHTML = `${res.result}`;
+      form.appendChild(message);
+
+      setTimeout(() => {
+        message.classList.add('message-hidden');
+       }, 2000);
+    })
+    .catch(err => console.log(err));
+}
+
+submit.addEventListener('click', sendData);

@@ -67,3 +67,12 @@ ul {
 .board li:nth-child(even) {
   background-color: rgb(214, 214, 214);
 }
+
+.message-ok {
+  margin-top: 2rem;
+  color: rgb(92, 224, 92);
+}
+
+.message-hidden {
+  display: none;
+}
