@@ -29,36 +29,35 @@ export const callApi = (url) => {
 };
 
 export const display = (data) => {
-    const sortedData = data.sort((a, b) => {
-      if (Number(a.score) > Number(b.score)) {
-        return -1;
-      }
-      if (Number(a.score) < Number(b.score)) {
-        return 1;
-      }
-      return 0;
-    });
+  const sortedData = data.sort((a, b) => {
+    if (Number(a.score) > Number(b.score)) {
+      return -1;
+    }
+    if (Number(a.score) < Number(b.score)) {
+      return 1;
+    }
+    return 0;
+  });
 
-    sortedData.forEach((user) => {
-      const container = document.querySelector('.board');
-      const li = document.createElement('li');
-      li.classList.add('user-score');
-      /* eslint-disable no-restricted-globals */
-      if (!isNaN(user.score)) {
-        li.innerHTML = `${user.user}: ${user.score}`;
-        container.appendChild(li);
-      }
-    });
-
+  sortedData.forEach((user) => {
+    const container = document.querySelector('.board');
+    const li = document.createElement('li');
+    li.classList.add('user-score');
+    /* eslint-disable no-restricted-globals */
+    if (!isNaN(user.score)) {
+      li.innerHTML = `${user.user}: ${user.score}`;
+      container.appendChild(li);
+    }
+  });
 };
 
 // Refresh
 const refreshItems = () => {
   const items = document.querySelectorAll('li');
-  if(items.length > 0){
-    items.forEach(item => {
+  if (items.length > 0) {
+    items.forEach((item) => {
       item.remove();
-    })
+    });
   }
   board.get(url)
     .then((res) => {
@@ -74,20 +73,17 @@ refresh.addEventListener('click', refreshItems);
 // Submit Button
 const submit = document.querySelector('.submit');
 
-
 function sendData(e) {
   const username = document.querySelector('.name');
   const score = document.querySelector('.user_score');
   const newData = {
     user: username.value,
-    score: score.value
+    score: score.value,
   };
-
 
   e.preventDefault();
   board.post(url, newData)
     .then((res) => {
-      console.log(res);
       const form = document.querySelector('form');
       const message = document.createElement('div');
       message.classList.add('message-ok');
@@ -99,8 +95,8 @@ function sendData(e) {
       }, 2000);
     })
     .catch((err) => err);
-  username.value = "";
-  score.value = "";
+  username.value = '';
+  score.value = '';
 }
 
 submit.addEventListener('click', sendData);
