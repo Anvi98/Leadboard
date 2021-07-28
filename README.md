@@ -1,36 +1,37 @@
-# Leaderboard: setup project
+# Leaderboard: hit the API
 
 ## Learning objectives
 
-- Use callbacks and promises.
-- Learn how to use proper ES6 syntax.
-- Use ES6 modules to write modular JavaScript.
-- Use webpack to bundle JavaScript.
+- Send and receive data from an API.
+- Use API documentation.
+- Understand and use JSON.
+- Make JavaScript code asynchronous.
 
 
 ## Description
 
-In this activity I will set up a JavaScript project for the Leaderboard list app, using *webpack* and *ES6* features, notably *modules*. I will develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript *async* and *await* and add some styling.
+In this activity I am working on the *Leaderboard list* app, sending and receiving data from/to the Leaderboard API.
 
 
-### General Good Practice 
+### General Good Practice
 
 - Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
-- Make sure that I used correct [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
-- Make sure that I documented my work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+- Make sure that I used correct flow [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
+- Make sure that I documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
 
 
 ### Project requirements
 
-
-- Create an **npm project with webpack**. 
-- Write plain HTML markup with minimum styling (just to make the layout), because I will implement styles in the following steps. I'm Using this wireframe as a guide:
+- Read the [Leaderboard API documentation](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) to learn how to use this API.
+- Create a new game with the name of your choice by using the API.
+- Implement the "Refresh" button (receiving data from the API and parsing the JSON).
+- Implement the form "Submit" button (sending data to the API).
+- Use `async` and `await` JavaScript features to consume the API.
+- No styling at this stage or branch.
 
 <p align="center">
   <img src="./leaderboard_wireframe.png" alt="Basic UI"  width="500px"/>
 </p>
-
-- I'm not making any API calls, this will be done on another activity branch
 
 - I'm Using ES6 modules, with *import* and *export*.
 
@@ -39,6 +40,7 @@ you can clone this repos by typing in your console:
 ````
 git clone git@github.com:Anvi98/Leadboard.git
 ````
+You should make sure to be on the **feature-api** branch before going further.
 Next, run:
 ````
 npm install
