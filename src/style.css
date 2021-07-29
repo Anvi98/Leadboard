@@ -96,11 +96,15 @@ ul {
   background-position: center;
   background-position-y: bottom ;
 }
+
 .add-score input {
   display: block;
   margin: 1rem 0;
   width: 100%;
+  border: 1px solid #ececec;
+  border-radius: 5px;
   padding: 0.4rem;
+  background-color: #ececec;
 }
 
 .submit,
@@ -148,4 +152,3 @@ ul {
 .message-hidden {
   display: none;
 }
-
