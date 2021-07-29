@@ -77,7 +77,7 @@ function sendData(e) {
       const form = document.querySelector('form');
       const message = document.createElement('div');
 
-      if(res.message) {
+      if (res.message) {
         message.classList.add('message-bad');
         message.innerHTML = `${res.message}`;
       } else {
