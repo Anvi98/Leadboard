@@ -50,7 +50,7 @@ you can clone this repos by typing in your console:
 ````
 git clone git@github.com:Anvi98/Leadboard.git
 ````
-You should make sure to be on the **feature-api** branch before going further.
+You should make sure to be on the **feature-final** branch before going further.
 Next, run:
 ````
 npm install
