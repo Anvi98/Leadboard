@@ -86,13 +86,20 @@ function sendData(e) {
     .then((res) => {
       const form = document.querySelector('form');
       const message = document.createElement('div');
-      message.classList.add('message-ok');
-      message.innerHTML = `${res.result}`;
+
+      if(res.message) {
+        message.classList.add('message-bad');
+        message.innerHTML = `${res.message}`;
+      } else {
+        message.classList.add('message-ok');
+        message.innerHTML = `${res.result}`;
+      }
+
       form.appendChild(message);
 
       setTimeout(() => {
         message.classList.add('message-hidden');
-      }, 2000);
+      }, 4000);
     })
     .catch((err) => err);
   username.value = '';
