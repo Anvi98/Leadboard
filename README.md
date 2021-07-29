@@ -10,11 +10,14 @@
 
 ## Description
 
-## Description
-
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 I have also implemented the actions behind the "Refresh" and "Submit" buttons to make calls to the Leadboard API.
+
+![screen](screen1.png)
+![screen](screen2.png)
+![screen](screen3.png)
+
 
 ### General Good Practice
 
