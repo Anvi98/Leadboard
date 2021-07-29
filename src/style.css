@@ -1,7 +1,33 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url('./img/princess.jpg');
+  background-size: cover;
+  opacity: 0.9;
+}
+/* Header Style */
+header {
+  background-color: #F53231;
+  text-align: center;
+  height: 10vh;
+  color: white;
+  padding-top: 12px;
+}
+
+.my_title {
+  border: #fff 5px solid;
+  border-radius: 30px;
+  max-width: 10%;
+  font-weight: bolder;
+  margin: auto;
+  padding: 0.7rem;
+  font-size: auto;
+}
+/* ----------*/
 
 h1 {
   padding-top: 2em;
@@ -18,9 +44,9 @@ ul {
 }
 
 .container {
+
   flex-wrap: wrap;
   width: 80%;
-  height: 100vh;
   margin: 2rem auto;
   justify-content: space-between;
 }
@@ -80,3 +106,4 @@ ul {
 .message-hidden {
   display: none;
 }
+
