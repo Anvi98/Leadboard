@@ -7,8 +7,12 @@
 body {
   background-image: url('./img/princess.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #B9E4FA;
 }
+
 /* Header Style */
 header {
   background-color: #F53231;
@@ -30,8 +34,9 @@ header {
 /* ----------*/
 
 h1 {
-  padding-top: 2em;
-  margin-left: 4.5em;
+  margin: 2rem 0 0 4.5em;
+  font-weight: bolder;
+  color: #F53231;;
 }
 
 ul {
@@ -41,49 +46,77 @@ ul {
 .container,
 .top-title {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container {
-
-  flex-wrap: wrap;
   width: 80%;
   margin: 2rem auto;
-  justify-content: space-between;
-}
-
-.top-title,
-.add-score {
-  flex-basis: 50%;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 55vh;
+  border-radius: 30px;
 }
 
 .score {
   width: 50%;
 }
 
+.top-title {
+  width: 80%;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+  margin-right: 8%;
+}
+
+.add-score,
+.top-title {
+  flex-basis: 30%;
+  margin-top: 2%;
+  color: #28A42B;
+}
+
 .board {
-  display: block;
-  margin: 3em  3em 0 0;
+  margin: 3em  0 0 0;
   list-style-type: none;
-  border: 2px solid grey;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  width: 80%;
   min-height: 300px;
   max-height: 300px;
   overflow-y: scroll;
+  opacity: 0.8;
 }
 
+.add-score {
+  background-image: url('./img/mario_run.gif');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom ;
+}
 .add-score input {
   display: block;
   margin: 1rem 0;
-  width: 15em;
-}
-
-.refresh {
-  margin-left: 3rem;
+  width: 100%;
+  padding: 0.4rem;
 }
 
 .submit,
 .refresh {
-  height: 2rem;
-  width: 5rem;
+  background-color: #FEB615;
+  padding: 0.6rem 1rem;
+  border: 1px solid #FEB615;
+  color: #fff;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.submit:hover,
+.refresh:hover {
+  cursor: pointer;
+  box-shadow: 0 0 11px #ffbe30;
 }
 
 .board li {
@@ -95,8 +128,17 @@ ul {
 }
 
 .message-ok {
+  background-color:rgb(92, 224, 92); ;
   margin-top: 2rem;
-  color: rgb(92, 224, 92);
+  padding: 1rem;
+  color: #fff;
+}
+
+.message-bad {
+  background-color:#F53231;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #fff; 
 }
 
 .message-created {
