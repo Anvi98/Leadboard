@@ -1,13 +1,7 @@
-import _ from 'lodash';
 import './style.css';
+import { callApi, createGame, url } from './apiCalls.js';
 
-function component() {
-  const element = document.createElement('div');
+const name = { name: 'Mario Kart' };
 
-  // Lodash, imported
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+createGame(name);
+callApi(url);
