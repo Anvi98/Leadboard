@@ -7,17 +7,7 @@ export const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/a
 // Create game
 export const createGame = (name) => {
   board.post('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', name)
-    .then((response) => {
-      const container = document.querySelector('.container');
-      const div = document.createElement('div');
-      div.classList.add('message-created');
-      div.innerHTML = `${response.result}`;
-      container.appendChild(div);
-
-      setTimeout(() => {
-        div.classList.add('message-hidden');
-      }, 2000);
-    })
+    .then((response) => response)
     .catch((err) => err);
 };
 
@@ -86,13 +76,20 @@ function sendData(e) {
     .then((res) => {
       const form = document.querySelector('form');
       const message = document.createElement('div');
-      message.classList.add('message-ok');
-      message.innerHTML = `${res.result}`;
+
+      if (res.message) {
+        message.classList.add('message-bad');
+        message.innerHTML = `${res.message}`;
+      } else {
+        message.classList.add('message-ok');
+        message.innerHTML = `${res.result}`;
+      }
+
       form.appendChild(message);
 
       setTimeout(() => {
         message.classList.add('message-hidden');
-      }, 2000);
+      }, 4000);
     })
     .catch((err) => err);
   username.value = '';

@@ -10,7 +10,17 @@
 
 ## Description
 
-In this activity I am working on the *Leaderboard list* app, sending and receiving data from/to the Leaderboard API.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
+
+I have also implemented the actions behind the "Refresh" and "Submit" buttons to make calls to the Leadboard API.
+
+![screen](screen1.png)
+![screen](screen2.png)
+![screen](screen3.png)
+
+### LIVE DEMO
+
+https://anvi98.github.io/Leadboard/
 
 
 ### General Good Practice
@@ -40,7 +50,7 @@ you can clone this repos by typing in your console:
 ````
 git clone git@github.com:Anvi98/Leadboard.git
 ````
-You should make sure to be on the **feature-api** branch before going further.
+You should make sure to be on the **feature-final** branch before going further.
 Next, run:
 ````
 npm install

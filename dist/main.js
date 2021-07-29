@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  box-sizing: border-box;\\n}\\n\\nh1 {\\n  padding-top: 2em;\\n  margin-left: 4.5em;\\n}\\n\\nul {\\n  padding: 0;\\n}\\n\\n.container,\\n.top-title {\\n  display: flex;\\n}\\n\\n.container {\\n  flex-wrap: wrap;\\n  width: 80%;\\n  height: 100vh;\\n  margin: 2rem auto;\\n  justify-content: space-between;\\n}\\n\\n.top-title,\\n.add-score {\\n  flex-basis: 50%;\\n}\\n\\n.score {\\n  width: 50%;\\n}\\n\\n.board {\\n  display: block;\\n  margin: 3em  3em 0 0;\\n  list-style-type: none;\\n  border: 2px solid grey;\\n  min-height: 300px;\\n  max-height: 300px;\\n  overflow-y: scroll;\\n}\\n\\n.add-score input {\\n  display: block;\\n  margin: 1rem 0;\\n  width: 15em;\\n}\\n\\n.refresh {\\n  margin-left: 3rem;\\n}\\n\\n.submit,\\n.refresh {\\n  height: 2rem;\\n  width: 5rem;\\n}\\n\\n.board li {\\n  padding: 0.5rem;\\n}\\n\\n.board li:nth-child(even) {\\n  background-color: rgb(214, 214, 214);\\n}\\n\\n.message-ok {\\n  margin-top: 2rem;\\n  color: rgb(92, 224, 92);\\n}\\n\\n.message-created {\\n  color: brown;\\n}\\n\\n.message-hidden {\\n  display: none;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_princess_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/princess.jpg */ \"./src/img/princess.jpg\");\n/* harmony import */ var _img_mario_run_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/mario_run.gif */ \"./src/img/mario_run.gif\");\n// Imports\n\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_img_princess_jpg__WEBPACK_IMPORTED_MODULE_2__);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_img_mario_run_gif__WEBPACK_IMPORTED_MODULE_3__);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-size: cover;\\n  background-repeat: no-repeat;\\n  opacity: 0.9;\\n  font-family: Arial, Helvetica, sans-serif;\\n  background-color: #B9E4FA;\\n}\\n\\n/* Header Style */\\nheader {\\n  background-color: #F53231;\\n  text-align: center;\\n  height: 10vh;\\n  color: white;\\n  padding-top: 12px;\\n}\\n\\n.my_title {\\n  border: #fff 5px solid;\\n  border-radius: 30px;\\n  max-width: 10%;\\n  font-weight: bolder;\\n  margin: auto;\\n  padding: 0.7rem;\\n  font-size: auto;\\n}\\n/* ----------*/\\n\\nh1 {\\n  margin: 2rem 0 0 4.5em;\\n  font-weight: bolder;\\n  color: #F53231;;\\n}\\n\\nul {\\n  padding: 0;\\n}\\n\\n.container,\\n.top-title {\\n  display: flex;\\n  flex-wrap: wrap;\\n}\\n\\n.container {\\n  width: 80%;\\n  margin: 2rem auto;\\n  justify-content: space-around;\\n  background-color: #fff;\\n  height: 55vh;\\n  border-radius: 30px;\\n}\\n\\n.score {\\n  width: 50%;\\n}\\n\\n.top-title {\\n  width: 80%;\\n  justify-content: space-between;\\n  padding: 1rem 0 0 0;\\n  margin-right: 8%;\\n}\\n\\n.add-score,\\n.top-title {\\n  flex-basis: 30%;\\n  margin-top: 2%;\\n  color: #28A42B;\\n}\\n\\n.board {\\n  margin: 3em  0 0 0;\\n  list-style-type: none;\\n  border: 1px solid #fff;\\n  border-radius: 10px;\\n  background-color: #F4F4F4;\\n  width: 80%;\\n  min-height: 100px;\\n  max-height: 300px;\\n  overflow-y: scroll;\\n  opacity: 0.8;\\n}\\n\\n.add-score {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  background-size: 30%;\\n  background-repeat: no-repeat;\\n  background-position: center;\\n  background-position-y: bottom ;\\n}\\n\\n.add-score input {\\n  display: block;\\n  margin: 1rem 0;\\n  width: 100%;\\n  border: 1px solid #ececec;\\n  border-radius: 5px;\\n  padding: 0.4rem;\\n  background-color: #ececec;\\n}\\n\\n.submit,\\n.refresh {\\n  background-color: #FEB615;\\n  padding: 0.6rem 1rem;\\n  border: 1px solid #FEB615;\\n  color: #fff;\\n  font-weight: bolder;\\n  opacity: 1;\\n}\\n\\n.submit:hover,\\n.refresh:hover {\\n  cursor: pointer;\\n  box-shadow: 0 0 11px #ffbe30;\\n}\\n\\n.board li {\\n  padding: 0.5rem;\\n}\\n\\n.board li:nth-child(even) {\\n  background-color: rgb(214, 214, 214);\\n}\\n\\n.message-ok {\\n  background-color:rgb(92, 224, 92); ;\\n  margin-top: 2rem;\\n  padding: 1rem;\\n  color: #fff;\\n}\\n\\n.message-bad {\\n  background-color:#F53231;\\n  margin-top: 2rem;\\n  padding: 1rem;\\n  color: #fff; \\n}\\n\\n.message-created {\\n  color: brown;\\n}\\n\\n.message-hidden {\\n  display: none;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://webpack-boilerplate/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== \"string\") {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://webpack-boilerplate/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -106,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"url\": () => (/* binding */ url),\n/* harmony export */   \"createGame\": () => (/* binding */ createGame),\n/* harmony export */   \"callApi\": () => (/* binding */ callApi),\n/* harmony export */   \"display\": () => (/* binding */ display)\n/* harmony export */ });\n/* harmony import */ var _app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.js */ \"./src/app.js\");\n\n\nconst board = new _app_js__WEBPACK_IMPORTED_MODULE_0__.default();\nconst gameid = 'SmX2CRxzg5yH7Ev8gg4H';\nconst url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores/`;\n\n// Create game\nconst createGame = (name) => {\n  board.post('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', name)\n    .then((response) => {\n      const container = document.querySelector('.container');\n      const div = document.createElement('div');\n      div.classList.add('message-created');\n      div.innerHTML = `${response.result}`;\n      container.appendChild(div);\n\n      setTimeout(() => {\n        div.classList.add('message-hidden');\n      }, 2000);\n    })\n    .catch((err) => err);\n};\n\n// Get info From Leadboard API\nconst callApi = (url) => {\n  board.get(url)\n    .then((res) => res.result)\n    .catch((err) => err);\n};\n\nconst display = (data) => {\n  const sortedData = data.sort((a, b) => {\n    if (Number(a.score) > Number(b.score)) {\n      return -1;\n    }\n    if (Number(a.score) < Number(b.score)) {\n      return 1;\n    }\n    return 0;\n  });\n\n  sortedData.forEach((user) => {\n    const container = document.querySelector('.board');\n    const li = document.createElement('li');\n    li.classList.add('user-score');\n    /* eslint-disable no-restricted-globals */\n    if (!isNaN(user.score)) {\n      li.innerHTML = `${user.user}: ${user.score}`;\n      container.appendChild(li);\n    }\n  });\n};\n\n// Refresh\nconst refreshItems = () => {\n  const items = document.querySelectorAll('li');\n  if (items.length > 0) {\n    items.forEach((item) => {\n      item.remove();\n    });\n  }\n  board.get(url)\n    .then((res) => {\n      const data = res.result;\n      display(data);\n    })\n    .catch((err) => err);\n};\n\nconst refresh = document.querySelector('.refresh');\nrefresh.addEventListener('click', refreshItems);\n\n// Submit Button\nconst submit = document.querySelector('.submit');\n\nfunction sendData(e) {\n  const username = document.querySelector('.name');\n  const score = document.querySelector('.user_score');\n  const newData = {\n    user: username.value,\n    score: score.value,\n  };\n\n  e.preventDefault();\n  board.post(url, newData)\n    .then((res) => {\n      const form = document.querySelector('form');\n      const message = document.createElement('div');\n      message.classList.add('message-ok');\n      message.innerHTML = `${res.result}`;\n      form.appendChild(message);\n\n      setTimeout(() => {\n        message.classList.add('message-hidden');\n      }, 2000);\n    })\n    .catch((err) => err);\n  username.value = '';\n  score.value = '';\n}\n\nsubmit.addEventListener('click', sendData);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/apiCalls.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"url\": () => (/* binding */ url),\n/* harmony export */   \"createGame\": () => (/* binding */ createGame),\n/* harmony export */   \"callApi\": () => (/* binding */ callApi),\n/* harmony export */   \"display\": () => (/* binding */ display)\n/* harmony export */ });\n/* harmony import */ var _app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.js */ \"./src/app.js\");\n\n\nconst board = new _app_js__WEBPACK_IMPORTED_MODULE_0__.default();\nconst gameid = 'SmX2CRxzg5yH7Ev8gg4H';\nconst url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores/`;\n\n// Create game\nconst createGame = (name) => {\n  board.post('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', name)\n    .then((response) => response)\n    .catch((err) => err);\n};\n\n// Get info From Leadboard API\nconst callApi = (url) => {\n  board.get(url)\n    .then((res) => res.result)\n    .catch((err) => err);\n};\n\nconst display = (data) => {\n  const sortedData = data.sort((a, b) => {\n    if (Number(a.score) > Number(b.score)) {\n      return -1;\n    }\n    if (Number(a.score) < Number(b.score)) {\n      return 1;\n    }\n    return 0;\n  });\n\n  sortedData.forEach((user) => {\n    const container = document.querySelector('.board');\n    const li = document.createElement('li');\n    li.classList.add('user-score');\n    /* eslint-disable no-restricted-globals */\n    if (!isNaN(user.score)) {\n      li.innerHTML = `${user.user}: ${user.score}`;\n      container.appendChild(li);\n    }\n  });\n};\n\n// Refresh\nconst refreshItems = () => {\n  const items = document.querySelectorAll('li');\n  if (items.length > 0) {\n    items.forEach((item) => {\n      item.remove();\n    });\n  }\n  board.get(url)\n    .then((res) => {\n      const data = res.result;\n      display(data);\n    })\n    .catch((err) => err);\n};\n\nconst refresh = document.querySelector('.refresh');\nrefresh.addEventListener('click', refreshItems);\n\n// Submit Button\nconst submit = document.querySelector('.submit');\n\nfunction sendData(e) {\n  const username = document.querySelector('.name');\n  const score = document.querySelector('.user_score');\n  const newData = {\n    user: username.value,\n    score: score.value,\n  };\n\n  e.preventDefault();\n  board.post(url, newData)\n    .then((res) => {\n      const form = document.querySelector('form');\n      const message = document.createElement('div');\n\n      if(res.message) {\n        message.classList.add('message-bad');\n        message.innerHTML = `${res.message}`;\n      } else {\n        message.classList.add('message-ok');\n        message.innerHTML = `${res.result}`;\n      }\n\n      form.appendChild(message);\n\n      setTimeout(() => {\n        message.classList.add('message-hidden');\n      }, 4000);\n    })\n    .catch((err) => err);\n  username.value = '';\n  score.value = '';\n}\n\nsubmit.addEventListener('click', sendData);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/apiCalls.js?");
 
 /***/ }),
 
@@ -117,6 +127,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ LeaderBoard)\n/* harmony export */ });\nclass LeaderBoard {\n  async post(url, data) {\n    this.url = url;\n    this.data = data;\n\n    const response = await fetch(url, {\n      method: 'POST',\n      headers: {\n        'Content-type': 'application/json',\n      },\n      body: JSON.stringify(data),\n    });\n    const res = await response.json();\n    return res;\n  }\n\n  async get(url) {\n    this.url = url;\n    const response = await fetch(url);\n    const res = await response.json();\n    return res;\n  }\n}\n\n//# sourceURL=webpack://webpack-boilerplate/./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/img/mario_run.gif":
+/*!*******************************!*\
+  !*** ./src/img/mario_run.gif ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c1cd5154f448274d9032.gif\";\n\n//# sourceURL=webpack://webpack-boilerplate/./src/img/mario_run.gif?");
+
+/***/ }),
+
+/***/ "./src/img/princess.jpg":
+/*!******************************!*\
+  !*** ./src/img/princess.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f822d32d6091ac1c1b1b.jpg\";\n\n//# sourceURL=webpack://webpack-boilerplate/./src/img/princess.jpg?");
 
 /***/ }),
 
@@ -181,6 +211,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +237,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
