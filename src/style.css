@@ -10,12 +10,12 @@ body {
   background-repeat: no-repeat;
   opacity: 0.9;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #B9E4FA;
+  background-color: #b9e4fa;
 }
 
 /* Header Style */
 header {
-  background-color: #F53231;
+  background-color: #f53231;
   text-align: center;
   height: 10vh;
   color: white;
@@ -29,14 +29,15 @@ header {
   font-weight: bolder;
   margin: auto;
   padding: 0.7rem;
-  font-size: auto;
+  font-size: 1rem;
 }
-/* ----------*/
+
+/* ---------- */
 
 h1 {
   margin: 2rem 0 0 4.5em;
   font-weight: bolder;
-  color: #F53231;;
+  color: #f53231;
 }
 
 ul {
@@ -73,7 +74,7 @@ ul {
 .top-title {
   flex-basis: 30%;
   margin-top: 2%;
-  color: #28A42B;
+  color: #28a42b;
 }
 
 .board {
@@ -81,7 +82,7 @@ ul {
   list-style-type: none;
   border: 1px solid #fff;
   border-radius: 10px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   width: 80%;
   min-height: 100px;
   max-height: 300px;
@@ -94,7 +95,7 @@ ul {
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: bottom ;
+  background-position-y: bottom;
 }
 
 .add-score input {
@@ -109,9 +110,9 @@ ul {
 
 .submit,
 .refresh {
-  background-color: #FEB615;
+  background-color: #feb615;
   padding: 0.6rem 1rem;
-  border: 1px solid #FEB615;
+  border: 1px solid #feb615;
   color: #fff;
   font-weight: bolder;
   opacity: 1;
@@ -132,17 +133,17 @@ ul {
 }
 
 .message-ok {
-  background-color:rgb(92, 224, 92); ;
+  background-color: rgb(92, 224, 92);
   margin-top: 2rem;
   padding: 1rem;
   color: #fff;
 }
 
 .message-bad {
-  background-color:#F53231;
+  background-color: #f53231;
   margin-top: 2rem;
   padding: 1rem;
-  color: #fff; 
+  color: #fff;
 }
 
 .message-created {
